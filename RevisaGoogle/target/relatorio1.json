@@ -1,0 +1,92 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7143422100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Google.Iniciar()"
+            }
+          }
+        ],
+        "line": 2,
+        "name": "Volta as Aulas",
+        "description": "",
+        "id": "consultagoogle;volta-as-aulas",
+        "after": [
+          {
+            "result": {
+              "duration": 682988100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Google.Finalizar()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1531700400,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "que acesso o site do Google",
+            "match": {
+              "location": "Google.que_acesso_o_site_do_Google()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2529727900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "pesquiso por \"Volta as Aulas\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Volta as Aulas",
+                  "offset": 14
+                }
+              ],
+              "location": "Google.pesquiso_por(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16901200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "exibe no titulo da aba \"Volta as Aulas - Pesquisa Google\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Volta as Aulas - Pesquisa Google",
+                  "offset": 24
+                }
+              ],
+              "location": "Google.exibe_no_titulo_da_aba(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "ConsultaGoogle",
+    "description": "",
+    "id": "consultagoogle",
+    "keyword": "Feature",
+    "uri": "Google.feature"
+  }
+]
